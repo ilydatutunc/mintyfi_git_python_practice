@@ -23,8 +23,25 @@ spam     653
 Name: count, dtype: int64
 ```
 
+Veri seti 5572 SMS mesajından oluşmaktadır ve iki sütun içerir: `label` ve `message`.
+
+Eksik değer kontrolü yaptığımda, `label` ve `message` sütunlarında eksik kayıt bulunmadı.
+
+Veri setiyle ilgili genel istatistikler:
+
+- Toplam kayıt sayısı: **5572**
+- Eksik değer bulunan kayıt sayısı: **0**
+- Tamamen aynı (duplicate) kayıt sayısı: **403**
+- Duplicate kayıtlar temizlendikten sonraki kayıt sayısı: **5169**
+
+Sınıf dağılımı şu şekildedir:
+
+- `ham` mesaj sayısı: **4516**
+- `spam` mesaj sayısı: **653**
+
+Temizlenmiş veri `sms_clean.csv` dosyasına kaydedilmiştir.
+
+Aşağıda mesaj sınıflarının sayısal dağılımını gösteren grafik yer almaktadır:
 
 ![alt text](chart.png)
-
-Veri seti 5572 SMS mesajından oluşmakta ve iki sütun var: label ve message. Eksik değer kontrolü yaptığımda label ve message' da eksik kayıt bulunmadı. Mesajların 4825’i ham, 747’si ise spam olarak buldum. Veri setinde 403 adet tamamen aynı olan tekrar eden kayıtlar tespit edildi  ve bu kayıtlar temizlenerek geriye 5169 farklı veri kaldı. Temizlenmiş veri sms_clean.csv dosyasına kaydedildi.
 
