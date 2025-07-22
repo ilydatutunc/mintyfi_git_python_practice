@@ -17,9 +17,7 @@ label
 ham     4516
 spam     653
 Name: count, dtype: int64
-
-![alt text](image.png)
-
+![alt text](image-1.png)
 
 Veri seti 5572 SMS mesajından oluşmakta ve iki sütun var: label ve message. Eksik değer kontrolü yaptığımda label ve message' da eksik kayıt bulunmadı. Mesajların 4825’i ham, 747’si ise spam olarak buldum. Veri setinde 403 adet tamamen aynı olan tekrar eden kayıtlar tespit edildi  ve bu kayıtlar temizlenerek geriye 5169 farklı veri kaldı. Temizlenmiş veri sms_clean.csv dosyasına kaydedildi.
 
