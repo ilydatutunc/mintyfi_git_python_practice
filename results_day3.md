@@ -1,36 +1,38 @@
-# Model Karşılaştırması Sonuçları
+Train class distribution:
+label
+ham 0.873761
+spam 0.126239
+Name: proportion, dtype: float64
+Validation class distribution:
+label
+ham 0.873308
+spam 0.126692
+Name: proportion, dtype: float64
+train: (4135, 7414), valid: (1034, 7414)
 
-## Veri Seti Sınıf Dağılımı
+Model: Logistic Regression
+Accuracy: 0.9564796905222437
+Precision: 0.9777777777777777
+Recall: 0.6717557251908397
+F1 Score: 0.7963800904977375
+Confusion Matrix:
+[[901 2]
+[ 43 88]]
 
-- **Train seti**:
-  - ham: %87.38
-  - spam: %12.62
+Model: Multinomial NB
+Accuracy: 0.9671179883945842
+Precision: 1.0
+Recall: 0.7404580152671756
+F1 Score: 0.8508771929824561
+Confusion Matrix:
+[[903 0]
+[ 34 97]]
 
-- **Validation seti**:
-  - ham: %87.33
-  - spam: %12.67
-
-- Train veri şekli: (4135, 7414)  
-- Validation veri şekli: (1034, 7414)
-
----
-
-## Modellerin Performansları
-
-| Model               | Accuracy | Precision (spam) | Recall (spam) | F1 Score (spam) | Confusion Matrix           |
-|---------------------|----------|------------------|---------------|-----------------|----------------------------|
-| Logistic Regression  | 0.9565   | 0.9778           | 0.6718        | 0.7964          | [[901, 2], [43, 88]]       |
-| Multinomial NB      | 0.9671   | 1.0000           | 0.7405        | 0.8509          | [[903, 0], [34, 97]]       |
-| Random Forest        | 0.9768   | 1.0000           | 0.8168        | 0.8992          | [[903, 0], [24, 107]]      |
-
----
-
-## Kısa Yorum
-
-- **Random Forest** modeli, genel doğruluk ve spam tespitinde en yüksek performansa sahiptir.
-- **Precision** değerleri üç modelde de çok yüksek, yanlış pozitif oranı çok düşüktür.
-- **Recall** açısından Logistic Regression spam tespiti konusunda diğer modellerden geride kalmıştır.
-- Bu nedenle, spam mesaj algılama için **Random Forest** modeli tercih edilmelidir.
-
----
-
+Model: Random Forest
+Accuracy: 0.9787234042553191
+Precision: 0.990990990990991
+Recall: 0.8396946564885496
+F1 Score: 0.9090909090909091
+Confusion Matrix:
+[[902 1]
+[ 21 110]]
