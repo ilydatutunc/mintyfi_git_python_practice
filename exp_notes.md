@@ -1,5 +1,3 @@
-## Deney Notları – Gün 4
-
 ### En İyi Koşu:
 - Accuracy: 0.98162475822050
 - ngram_range: (1,1)
@@ -16,7 +14,7 @@
 
 En yüksek accuracy değerini veren ngram_range = (1,1) ' di.
 
-![alt text](image/gram_range2.png)
+![alt text](image/ngram_range2.png)
 
 
 Sonrasında En yüksek accuracy değerini veren ngram_range değeri ile devam ettim. Bu sefer ngram_range ve max_feature parametrelerini sabit tutarak 5 farklı C parametresi ile koştum.
@@ -29,11 +27,11 @@ En yüksek accuracy değerini veren C = 100.0 ' di.
 
 Sonrasında En yüksek accuracy değerini veren C değeri ile devam ettim. Bu sefer ngram_range ve C parametrelerini sabit tutarak 4 farklı max_feature parametresi ile koştum.
 
-![alt text](image/max_feature1.png)
+![alt text](image/max_features1.png)
 
 En yüksek accuracy değerini veren max_feature = 3000 ' di.
 
-![alt text](image/max_feature2.png)
+![alt text](image/max_features2.png)
 
 Böylelikle en yüksek accuracy değerini veren koşu :
 
