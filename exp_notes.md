@@ -12,28 +12,28 @@
 
 Öncelikle C ve max_feature parametlerini sabit tutarak 3 farklı ngram_range parametresi ile koştum.
 
-![alt text](ngram_range1.png)
+![alt text](image/ngram_range1.png)
 
 En yüksek accuracy değerini veren ngram_range = (1,1) ' di.
 
-![alt text](ngram_range2.png)
+![alt text](image/gram_range2.png)
 
 
 Sonrasında En yüksek accuracy değerini veren ngram_range değeri ile devam ettim. Bu sefer ngram_range ve max_feature parametrelerini sabit tutarak 5 farklı C parametresi ile koştum.
 
-![alt text](C1.png)
+![alt text](image/C1.png)
 
 En yüksek accuracy değerini veren C = 100.0 ' di.
 
-![alt text](C2.png)
+![alt text](image/C2.png)
 
 Sonrasında En yüksek accuracy değerini veren C değeri ile devam ettim. Bu sefer ngram_range ve C parametrelerini sabit tutarak 4 farklı max_feature parametresi ile koştum.
 
-![alt text](max_feature1.png)
+![alt text](image/max_feature1.png)
 
 En yüksek accuracy değerini veren max_feature = 3000 ' di.
 
-![alt text](max_feature2.png)
+![alt text](image/max_feature2.png)
 
 Böylelikle en yüksek accuracy değerini veren koşu :
 
