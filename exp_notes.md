@@ -27,7 +27,7 @@ En yüksek accuracy değerini veren C = 100.0 ' di.
 
 Sonrasında En yüksek accuracy değerini veren C değeri ile devam ettim. Bu sefer ngram_range ve C parametrelerini sabit tutarak 4 farklı max_feature parametresi ile koştum.
 
-![alt text](image/max_features1.png)
+![alt text](image/max_features.png)
 
 En yüksek accuracy değerini veren max_feature = 3000 ' di.
 
