@@ -34,8 +34,10 @@ for max_features in max_features_values:
     X_train_vectorized = vectorizer.fit_transform(X_train)
     X_test_vectorized = vectorizer.transform(X_test)
 
+   
     model = LogisticRegression(C=100.0, max_iter=200)
     model.fit(X_train_vectorized, y_train)
+
 
     
     y_pred = model.predict(X_test_vectorized)
