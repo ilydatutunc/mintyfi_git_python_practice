@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import mlflow
 import mlflow.sklearn
+import joblib
 
 mlflow.set_tracking_uri("http://localhost:5000")
 
@@ -29,6 +30,10 @@ X_train, X_test, y_train, y_test = train_test_split(
 max_features_values = [1000, 2000, 3000, None]
 ngram = (1,1)  #digerleri sabit tutulan kosularda en yuksek accuracy degerine sahip
 
+best_acc = 0
+best_model = None
+best_vectorizer = None
+
 for max_features in max_features_values:
     vectorizer = TfidfVectorizer(stop_words='english', ngram_range=ngram, max_features=max_features)
     X_train_vectorized = vectorizer.fit_transform(X_train)
@@ -52,3 +57,14 @@ for max_features in max_features_values:
         mlflow.sklearn.log_model(model, "model")
 
     print(f"max_features={max_features}, accuracy={acc:.4f}")
+
+    if acc > best_acc:
+        best_acc = acc
+        best_model = model
+        best_vectorizer = vectorizer
+
+joblib.dump(best_model, "best_model.pkl")
+joblib.dump(best_vectorizer, "vectorizer.pkl")
+
+print(f"Best model accuracy: {best_acc:.4f}")
+print("Best model and vectorizer saved as best_model.pkl and vectorizer.pkl.")
