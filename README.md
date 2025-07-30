@@ -4,9 +4,10 @@
 Bu proje, IPIP Big Five kişilik testi verisi kullanarak, Neuroticism anket maddelerine verilen cevaplardan yola çıkarak bireyin Extraversion seviyesini (yüksek/düşük) tahmin etmeyi amaçlamaktadır.
 
 ## Veri Seti Hakkında
-Bu projede kullanılan veri seti, Kaggle ve Open Psychometrics gibi kaynaklardan elde edilmiş IPIP Big Five kişilik testi verilerinden derlenmiştir. Veri, çevrimiçi toplanan yüz binlerce anket yanıtını içerir.
 
-Big Five modeli, kişilik özelliklerini beş temel boyutta tanımlar: Extraversion, Neuroticism, Agreeableness, Conscientiousness ve Openness. Bu model, anket verileri üzerinden yapılan faktör analizleriyle geliştirilmiş ve insan kişiliğini açıklamak için yaygın şekilde kullanılır.
+Bu projede kullanılan veri seti, [Big Five Personality Test - Kaggle](https://www.kaggle.com/datasets/tunguz/big-five-personality-test/data) adresinden indirilmiştir. 
+
+Veri, IPIP Big Five kişilik testi anketlerinden toplanan yüz binlerce yanıtı içerir ve kişilik özelliklerini beş temel boyutta (Extraversion, Neuroticism, Agreeableness, Conscientiousness, Openness) tanımlar.
 
 ## Veri Seti
 Veri seti: IPIP Big Five kişilik testi (`data-final.csv`).
