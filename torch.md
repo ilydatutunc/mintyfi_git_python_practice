@@ -3,4 +3,4 @@
 python torch_basics.py
 şeklinde çalıştırıldığında aşağıdaki çıktıyı alıyoruz.
 
-![alt text](image.png)
+![alt text](output.png)
