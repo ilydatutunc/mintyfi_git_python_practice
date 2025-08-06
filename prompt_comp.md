@@ -1,18 +1,30 @@
 ## 1. Kısa Prompt  
 **Prompt:**  
-Bana yapay zekanın temel kullanım alanlarını 3 madde halinde yaz.
+Yapay zekanın temel kullanım alanları neler?
 
 **Model Yanıtı:**  
-Tabii! Yapay zekanın temel kullanım alanları şunlardır:
+Yapay zekanın temel kullanım alanları şunlardır:
 
-1. Veri Analizi ve Tahmin: Büyük veri setlerini analiz ederek örüntüleri keşfetme, gelecekteki trendleri ve sonuçları tahmin etme.
+Doğal Dil İşleme (NLP): Metin ve konuşmayı anlama, çeviri, sohbet botları, sesli asistanlar.
 
-2. Otomasyon ve Robotik: Tekrarlayan işleri otomatikleştirme, üretim, lojistik ve servis robotları ile süreçleri hızlandırma.
+Görüntü ve Video İşleme: Yüz tanıma, nesne tespiti, tıbbi görüntü analizi.
 
-3. Doğal Dil İşleme ve Görüntü Tanıma: İnsan dilini anlama ve üretme (chatbot, çeviri), görüntü ve ses tanıma sistemleri (yüz tanıma, tıbbi görüntü analizi).
+Tahmin ve Analiz: Veri üzerinden tahminler yapma, finans, satış, hava durumu gibi alanlarda.
+
+Otonom Sistemler: Sürücüsüz araçlar, robotlar, dronlar.
+
+Öneri Sistemleri: Film, ürün, müzik gibi kişiye özel öneriler.
+
+Sağlık: Hastalık teşhisi, ilaç geliştirme, hasta takibi.
+
+Müşteri Hizmetleri: Chatbotlar, otomatik çağrı ve destek sistemleri.
+
+Eğitim: Kişiselleştirilmiş öğrenme, otomatik değerlendirme.
+
+Özetle, yapay zeka birçok sektörde otomasyon, veri analizi ve kullanıcı deneyimini iyileştirmek için kullanılıyor.
 
 **Değerlendirme:**  
-Model çok hızlı ve net cevap vermiş. Temel noktalar var ama detay yok, yüzeysel kalıyor. Hızlıca genel fikir almak için ideal ama biraz eksik gibi.
+Model net cevap vermiş. Temel noktalar var ama detay yok, yüzeysel kalıyor. Hızlıca genel fikir almak için ideal ama biraz eksik gibi.
 
 ---
 
@@ -62,28 +74,37 @@ Büyük dil modelleri ve gelişmiş derin öğrenme mimarileri sayesinde makinel
 Yapay zeka, veri analizinden otomasyona, doğal dil işlemden görüntü tanımaya kadar çok geniş bir yelpazede hayatımızı dönüştürüyor. İş süreçlerini hızlandırıyor, hata payını azaltıyor, kişiselleştirilmiş deneyimler sunuyor ve yeni iş alanları yaratıyor. Teknolojinin bu alanlardaki gelişimi, insan-makine iş birliğini güçlendirerek daha verimli ve yenilikçi çözümler ortaya çıkarıyor.
 
 **Değerlendirme:**  
-Oldukça kapsamlı, her alanı örneklerle detaylandırmış. Teknolojinin yeniliklerinden de bahsetmesi çok güzel olmuş. Okuması uzun ama bilgi almak isteyen için çok iyi.
+Yanıt kapsamlı ve iyi yapılandırılmış. Her kullanım alanı detaylı şekilde açıklanmış, örnekler ve yenilikler net biçimde aktarılmış. Bilgi zenginliği ve açıklık açısından başarılı. Okuması uzun ama bilgi almak isteyen için iyi.
 
 ---
 
 ## 3. Örnekli Prompt  
 **Prompt:**  
-Yapay zekanın sağlık sektöründeki kullanım alanlarını 3 madde olarak listele ve her biri için birer örnek vaka belirt.
+Yapay zekanın sağlık sektöründeki kullanım alanlarını aşağıdaki örnek gibi yaz:
+   Hastalık Teşhisi: Yapay zeka radyoloji görüntülerini analiz eder.  
+   Örnek: Google Health’in AI modeli meme kanserini insan radyologlardan daha doğru tespit ediyor.
 
 **Model Yanıtı:**  
-Tabii! Yapay zekanın sağlık sektöründeki kullanım alanlarını 3 madde halinde ve her biri için örnek vakayla birlikte yazıyorum:
+Hastalık Teşhisi: Yapay zeka radyoloji görüntülerini analiz eder.
+Örnek: Google Health’in AI modeli meme kanserini insan radyologlardan daha doğru tespit ediyor.
 
-1. Hastalık Teşhisi ve Görüntü Analizi  
-Örnek: Yapay zeka destekli sistemler, radyoloji görüntülerini (MR, röntgen, tomografi) analiz ederek erken kanser teşhisi yapabiliyor. Örneğin, Google Health’in geliştirdiği AI modeli meme kanserini insan radyologlardan daha yüksek doğrulukla tespit edebiliyor.
+Hasta Takibi ve İzleme: AI tabanlı cihazlar hastaların vital bulgularını gerçek zamanlı takip eder.
+Örnek: Apple Watch kalp ritim bozukluklarını erken aşamada tespit edebiliyor.
 
-2. Kişiselleştirilmiş Tedavi Planları  
-Örnek: Hastanın genetik verileri, yaşam tarzı ve tedavi geçmişi gibi veriler yapay zeka ile analiz edilerek en etkili ilaç ve tedavi kombinasyonu öneriliyor. IBM Watson for Oncology, kanser tedavisinde hastaya özel ilaç önerileri sunuyor.
+İlaç Geliştirme: Yapay zeka yeni ilaç moleküllerini hızlıca keşfeder ve klinik deney süreçlerini hızlandırır.
+Örnek: Insilico Medicine, AI kullanarak yeni antibiyotik adayları geliştirdi.
 
-3. Hasta Takibi ve Yönetimi  
-Örnek: AI tabanlı mobil uygulamalar ve giyilebilir cihazlar, kronik hastaların (örneğin diyabet veya kalp hastalığı) sağlık durumunu sürekli izleyip, anormal durumlarda erken uyarı veriyor. Apple Watch’un kalp ritmi takibi ve anormal ritim tespit özellikleri bu alanda örnek gösterilebilir.
+Kişiselleştirilmiş Tedavi: AI, hastanın genetik ve yaşam tarzı verilerine göre özel tedavi planları oluşturur.
+Örnek: IBM Watson Oncology, kanser tedavisi için kişiye özel öneriler sunuyor.
+
+Sağlık Yönetimi ve Randevu Planlama: AI, hasta randevularını optimize eder ve sağlık hizmetlerinde operasyonel verimliliği artırır.
+Örnek: Ada Health uygulaması hastalara semptomlarına göre ön tanı koyarak doğru doktora yönlendiriyor.
+
+Robotik Cerrahi: AI destekli robotlar cerrahi işlemleri daha hassas ve minimal invaziv şekilde gerçekleştirir.
+Örnek: da Vinci cerrahi robotu prostat ve kalp ameliyatlarında kullanılıyor.
 
 **Değerlendirme:**  
-Örnekler somut ve anlaşılır, sağlık sektörüne odaklanması güzel. Böyle somut vakalarla desteklenince bilgi daha değerli oluyor. Sektör bazlı analizlerde kullanılabilir.
+Model her maddeyi somut örneklerle destekleyerek spesifik ve uygulanabilir bilgiler sunmuş.Promtta verilen örneğe uygun. İlk madde verilen örnekle aynı şekilde kullanılmış.
 
 ---
 
@@ -116,7 +137,7 @@ Tabii, bir teknoloji danışmanı olarak yapay zekanın finans sektöründeki uy
 Finans sektöründe yapay zeka, süreçleri hızlandırıp, riskleri minimize ederek rekabet avantajı sağlar. Ancak, etik ve güvenlik konularına dikkat edilmezse ciddi sorunlar ortaya çıkabilir. Bu yüzden, YZ uygulamalarında şeffaflık, denetim ve insan-makine iş birliği kritik önemdedir.
 
 **Değerlendirme:**  
-Danışman rolü çok iyi yakalanmış. Hem faydalar hem riskler dengeli ve açık anlatılmış. Böyle rol tabanlı sorular modeli doğru yönlendirmek için etkili oluyor.
+Yanıt, rol bazında beklentiyi karşılayacak şekilde hem faydaları hem riskleri dengeli ve detaylı anlatmış. Profesyonel bir danışman perspektifi yansıtması başarılı.
 
 ---
 
@@ -128,6 +149,6 @@ Yapay zekanın eğitimdeki kullanımını maksimum 50 kelime ile açıkla.
 Yapay zeka, kişiselleştirilmiş öğrenme, otomatik değerlendirme ve akıllı öğretim sistemleriyle eğitimde öğrenci başarısını artırır. Öğrenme hızına ve tarzına uyum sağlar, öğretmenlerin yükünü azaltır, erişimi genişletir ve etkileşimli deneyimler sunar.
 
 **Değerlendirme:**  
-Kelime sınırı olunca model kısa ve öz kalmış, isteneni tam yapmış. Fazla detaya girmiyor ama hızlıca özet için oldukça uygun.
+Yanıt verilen kelime sınırına uygun olarak kısa, öz ve net olmuş. Ana fikirler başarılı şekilde özetlenmiş; ancak daha fazla detay istenirse yetersiz kalabilir.
 
 ---
