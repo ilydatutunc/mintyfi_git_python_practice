@@ -1,1 +1,0 @@
-# mintyfi_git_python_practice
