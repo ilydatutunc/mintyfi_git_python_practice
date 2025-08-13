@@ -1,2 +1,4 @@
-nutuk_chunks.pkl
-nutuk.index
+nutuk_chunks_dataset/
+artifacts/
+data/
+nutuk_chunks.index
