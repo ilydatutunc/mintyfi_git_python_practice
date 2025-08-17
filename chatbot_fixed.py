@@ -115,6 +115,21 @@ def truncate_context(query, context, tokenizer, max_tokens=800):
     truncated_context = tokenizer.decode(context_tokens)
     return truncated_context
 
+# Embedding ve GPT2 Instruction modellerini yükler
+def load_models():
+    """Embedding ve GPT2 Instruction modellerini yükler"""
+    print("Embedding modeli yükleniyor (CPU)...")
+    embed_model = SentenceTransformer("trmteb/turkish-embedding-model", device="cpu")
+
+    print("GPT2 Instruction modeli ve tokenizer yükleniyor (CPU)...")
+    model_name = "ytu-ce-cosmos/turkish-gpt2-medium-350m-instruct-v0.1"
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
+    model = AutoModelForCausalLM.from_pretrained(model_name)
+    model.eval()
+
+    print("Model başarıyla yüklendi!")
+    return embed_model, tokenizer, model
+
 # ana çalıştırma fonksiyonu
 # tüm pipeline burada çalışır:
 # 1) embedding modeli yüklenir
@@ -124,36 +139,20 @@ def truncate_context(query, context, tokenizer, max_tokens=800):
 def main():
     pdf_path = "data/nutuk.pdf"
 
-    # embedding modeli yükleniyor
-    print("Embedding modeli yükleniyor (CPU)...")
-    embed_model = SentenceTransformer("trmteb/turkish-embedding-model", device="cpu")
-
-    # cache yükleniyor veya yeniden oluşturuluyor
+    embed_model, tokenizer, model = load_models()
     chunks, embeddings = load_or_create_cache(pdf_path, embed_model)
-    
-    # gpt2 instruct modeli yükleniyor
-    print("GPT2 Instruction modeli ve tokenizer yükleniyor (CPU)...")
-    model_name = "ytu-ce-cosmos/turkish-gpt2-medium-350m-instruct-v0.1"
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
-    model = AutoModelForCausalLM.from_pretrained(model_name)
-    model.eval()
 
-    print("Model başarıyla yüklendi!")
-    
-    # kullanıcıdan sürekli olarak soru alınıp cevap üretilir
     while True:
         query = input("\nSorunuzu yazın (çıkmak için 'quit'): ")
         if query.lower() == 'quit':
             break
 
-        # soruya en uygun chunkslari bulunur
         relevant_chunks = find_relevant_chunks(query, chunks, embeddings, embed_model)
         context = "\n\n".join(relevant_chunks)
         context = truncate_context(query, context, tokenizer)
 
         print("Yanıt aranıyor...")
         try:
-            # modelden yanıt alınır
             answer = ask_gpt2(query, context, tokenizer, model)
             print(f"\nYanıt: {answer}")
         except Exception as e:
