@@ -2,3 +2,6 @@ nutuk_chunks_dataset/
 artifacts/
 data/
 nutuk_chunks.index
+models/
+cache/
+__pycache__/

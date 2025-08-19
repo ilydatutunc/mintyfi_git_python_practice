@@ -1,6 +1,10 @@
-transformers
-sentence-transformers
-faiss-cpu
-torch
-datasets
-sentencepiece
+sentence-transformers==5.1.0
+transformers==4.55.0
+torch==2.7.1+cu118
+faiss-cpu==1.11.0.post1
+scikit-learn==1.7.1
+numpy==2.3.2
+PyMuPDF==1.26.3
+huggingface-hub==0.34.4
+streamlit==1.48.0
+python-dotenv==1.1.1
