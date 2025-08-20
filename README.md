@@ -2,6 +2,13 @@
 
 Bu proje, Mustafa Kemal Atatürk'ün **Nutuk** eserini kullanarak sorularınızı yanıtlayan yapay zeka destekli bir chatbot uygulamasıdır.
 
+## 🎬 Örnek Kullanım
+
+<video width="100%" controls>
+  <source src="demo.mp4" type="video/mp4">
+  Tarayıcınız video oynatmayı desteklemiyor.
+</video>
+
 ## 🚀 Özellikler
 
 - **PDF İşleme**: Nutuk PDF'ini otomatik olarak okur ve işler
@@ -10,6 +17,7 @@ Bu proje, Mustafa Kemal Atatürk'ün **Nutuk** eserini kullanarak sorularınız�
 - **Tarih Çıkarma**: Tarih sorularında otomatik tarih bilgisi çıkarımı
 - **Web Arayüzü**: Streamlit ile modern ve kullanıcı dostu arayüz
 - **Cache Sistemi**: Hızlı yanıt için akıllı önbellekleme
+
 
 ## 🏗️ Proje Yapısı
 
@@ -28,26 +36,8 @@ mintyfi_git_python_practice/
 └── 📁 __pycache__/          # Python cache dosyaları
 ```
 
-## 🛠️ Teknolojiler
 
-### **Core AI & ML**
-- **Sentence Transformers**: Metin embedding'leri için
-- **Google Gemini AI**: Doğal dil işleme ve yanıt üretimi
-- **Scikit-learn**: Cosine similarity hesaplama
-- **NumPy**: Sayısal işlemler
-
-### **PDF & Veri İşleme**
-- **PyMuPDF (fitz)**: PDF okuma ve metin çıkarma
-- **Pickle**: Cache dosyaları için serileştirme
-
-### **Web Framework**
-- **Streamlit**: Modern web arayüzü
-- **CSS**: Özelleştirilmiş stil ve tasarım
-
-### **Utility**
-- **Python-dotenv**: Çevre değişkenleri yönetimi
-
-## 📥 Projeyi İndirme
+## 📥 Kurulum & Çalıştırma
 
 ### **1. GitHub'dan Clone**
 ```bash
