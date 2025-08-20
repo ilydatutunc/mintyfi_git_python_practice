@@ -4,10 +4,9 @@ Bu proje, Mustafa Kemal Atatürk'ün **Nutuk** eserini kullanarak sorularınız�
 
 ## 🎬 Örnek Kullanım
 
-<video width="100%" controls>
-  <source src="demo.mp4" type="video/mp4">
-  Tarayıcınız video oynatmayı desteklemiyor.
-</video>
+![Chatbot Kullanım Örneği](example_usage.png)
+
+**Chatbot'un nasıl çalıştığını görmek için yukarıdaki ekran görüntüsüne bakabilirsiniz.**
 
 ## 🚀 Özellikler
 
