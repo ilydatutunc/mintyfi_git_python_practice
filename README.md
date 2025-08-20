@@ -1,4 +1,4 @@
-# 📚 Nutuk Chatbot - AI Destekli Tarih Asistanı
+# 📚 Nutuk Chatbot
 
 Bu proje, Mustafa Kemal Atatürk'ün **Nutuk** eserini kullanarak sorularınızı yanıtlayan yapay zeka destekli bir chatbot uygulamasıdır.
 
