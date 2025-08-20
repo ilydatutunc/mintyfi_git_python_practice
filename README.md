@@ -10,6 +10,36 @@ Fine-tuning, genel amaçlı büyük veri üzerinde eğitilmiş bir modelin, daha
 
 ---
 
+## 📊 Dataset Detayları ve Analizi
+
+### **1.a Emotion Veri Seti Detayları**
+
+**Kaynak**: Hugging Face datasets kütüphanesinden yüklenir (`load_dataset("emotion")`).
+
+**Tür**: Metin sınıflandırma (Text Classification), İngilizce cümleler.
+
+**Toplam Örnek Sayısı**:
+- **Train**: 16,000 civarı
+- **Validation**: 2,000 civarı  
+- **Test**: 2,000 civarı
+
+**Etiketler**:
+- `sadness` 
+- `joy` 
+- `love` 
+- `anger` 
+- `fear` 
+- `surprise` 
+
+**Sınıf Dağılımı**: Dengesiz bir dağılım yok, örnekler çoğunlukla eşit olarak dağılmış.
+
+**Ön İşleme Gereksinimleri**:
+- Boş veya çok kısa cümleler temizlenebilir.
+- Tokenizasyon sırasında maksimum uzunluk padding ve truncation ile ayarlanır.
+- Model, sınıflandırma için etiketleri sayısal hale getirmelidir (label encoding).
+
+---
+
 ## Gerekli Kütüphaneler
 
 ```bash
