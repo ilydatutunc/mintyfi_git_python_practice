@@ -1,5 +1,5 @@
 import streamlit as st
-from chatbot_fixed import load_models, load_or_create_cache, find_relevant_chunks, truncate_context, ask_gpt2
+from chatbot import load_models, load_or_create_cache, find_relevant_chunks, ask_gemini
 
 # Sayfa konfigürasyonu
 st.set_page_config(
@@ -49,7 +49,7 @@ def main():
         1. PDF'den metin çıkarılır ve chunk'lara bölünür
         2. Her chunk için embedding oluşturulur
         3. Sorgunuz en uygun chunk'larla eşleştirilir
-        4. Türkçe GPT2 Instruction modeli yanıt üretir
+        4. Google Gemini AI modeli yanıt üretir
         """)
         st.markdown("---")
         st.markdown("**💡 Örnek Sorular:**")
@@ -85,12 +85,11 @@ def main():
             with st.chat_message("assistant"):
                 with st.spinner("Düşünüyorum..."):
                     try:
-                        embed_model, tokenizer, model = load_models()
+                        embed_model = load_models()
                         chunks, embeddings = load_or_create_cache("data/nutuk.pdf", embed_model)
                         relevant_chunks = find_relevant_chunks(prompt, chunks, embeddings, embed_model)
                         context = "\n\n".join(relevant_chunks)
-                        context = truncate_context(prompt, context, tokenizer)
-                        response = ask_gpt2(prompt, context, tokenizer, model)
+                        response = ask_gemini(prompt, context)
                         st.markdown(response)
                         st.session_state.messages.append({"role": "assistant", "content": response})
                         st.session_state.last_context = context
@@ -101,7 +100,7 @@ def main():
     with col2:
         st.markdown("### 📊 İstatistikler")
         try:
-            embed_model, tokenizer, model = load_models()
+            embed_model = load_models()
             chunks, embeddings = load_or_create_cache("data/nutuk.pdf", embed_model)
             st.metric("Toplam Chunk", len(chunks))
             st.metric("Chunk Boyutu", "500 karakter")
@@ -116,7 +115,7 @@ def main():
     st.markdown("""
     <div style="text-align: center; color: #666;">
         <p>Bu chatbot, Mustafa Kemal Atatürk'ün Nutuk eserini kullanarak oluşturulmuştur.</p>
-        <p>Teknoloji: Streamlit + Türkçe GPT2 Instruction + Sentence Transformers</p>
+        <p>Teknoloji: Streamlit + Google Gemini AI + Sentence Transformers</p>
     </div>
     """, unsafe_allow_html=True)
 
