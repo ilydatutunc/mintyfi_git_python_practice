@@ -2,27 +2,26 @@
 
 Bu proje, **LangFlow** kullanılarak **kod yazmadan** geliştirilmiş bir Nutuk chatbot uygulamasıdır. Chatbot, Mustafa Kemal Atatürk'ün Nutuk eserini baz alarak kullanıcıların sorularını yanıtlamak için **Retrieval-Augmented Generation (RAG)** mantığını kullanır.
 
-## 🎯 Proje Amacı
+## Proje Amacı
 
 **No-code yaklaşımı** ile LangFlow'un görsel arayüzünü kullanarak, Nutuk eserindeki bilgileri kullanarak kullanıcıların sorularını doğru ve bağlama uygun şekilde yanıtlamak.
 
-## ✨ Özellikler
+## Özellikler
 
-- **🚀 No-Code Geliştirme**: Kod yazmadan LangFlow'un görsel arayüzü ile geliştirildi
-- **🔗 RAG Mantığı**: Dokümanlardan alınan bilgilerle yanıt üretir
-- **📊 Embedding**: ollama embeddings ile metinleri vektörlere dönüştürür (nomic-embed-text)
-- **🤖 Language Model**: ollama/llama3:latest kullanılır
-- **💬 Message History**: Konuşma geçmişi saklanır ve yanıt üretiminde dikkate alınır
-- **🗄️ Veritabanı**: ChromaDB ile dokümanlar ve embeddingler saklanır
+- **No-Code Geliştirme**: Kod yazmadan LangFlow'un görsel arayüzü ile geliştirildi
+- **RAG Mantığı**: Dokümanlardan alınan bilgilerle yanıt üretir
+- **Embedding**: ollama embeddings ile metinleri vektörlere dönüştürür (nomic-embed-text)
+- **Language Model**: ollama/llama3:latest kullanılır
+- **Message History**: Konuşma geçmişi saklanır ve yanıt üretiminde dikkate alınır
+- **Veritabanı**: ChromaDB ile dokümanlar ve embeddingler saklanır
 
-## 🚀 Kurulum
+## Kurulum
 
 ### Gereksinimler
 
 - Python 3.8+
 - Ollama (yerel kurulum gerekli)
 
-> **💡 No-Code Avantajı**: Bu proje tamamen LangFlow'un görsel arayüzü kullanılarak geliştirilmiştir. Kod yazma bilgisi gerektirmez!
 
 ### 1. Python Ortamını Hazırla
 
@@ -48,8 +47,6 @@ ollama pull nomic-embed-text:latest
 langflow
 ```
 
-LangFlow arayüzü `http://localhost:3000` adresinde açılacaktır.
-
 > **🎬 Görsel Rehber**: Kurulum tamamlandıktan sonra aşağıdaki demo görüntülerini inceleyerek LangFlow akış yapısını ve chatbot'un nasıl çalıştığını görebilirsiniz!
 
 ### Model Parametreleri
@@ -67,31 +64,25 @@ LangFlow arayüzü `http://localhost:3000` adresinde açılacaktır.
 
 ## 📖 Kullanım
 
-### 1. Chatbot'u Başlat
-
-> **🖱️ Sürükle & Bırak**: LangFlow'un görsel arayüzünden chatbot akışını yükle veya sürükle-bırak ile oluşturun!
-
-LangFlow arayüzünden chatbot akışını yükle veya oluşturun.
-
-### 🎬 Demo Görüntüleri
+### 1. LangFlow arayüzünden chatbot akışını yükle veya oluşturun.
 
 #### LangFlow Akış Yapısı
 ![LangFlow Akış Yapısı](gif/langflow_gif.gif)
 
 *LangFlow'taki node'lar ve bağlantılar - No-code RAG chatbot yapısı*
 
-#### Chatbot Yanıt Demo
-![Chatbot Yanıt Demo](gif/chatbot_gif.gif)
-
-*Chatbot'un Nutuk hakkında sorulara nasıl yanıt verdiğini gösteren demo*
-
-### 2. Soru Sor
+### 2. Soru Sorun
 
 Chatbot arayüzünden Nutuk ile ilgili sorularınızı sorabilirsiniz:
 
 - "Kurtuluş Savaşı ne zaman başladı?"
 - "Atatürk'ün Samsun'a çıkışı hakkında bilgi verir misin?"
 - "Cumhuriyet nasıl ilan edildi?"
+
+#### Chatbot Yanıt Demo
+![Chatbot Yanıt Demo](gif/chatbot_gif.gif)
+
+*Chatbot'un Nutuk hakkında sorulara nasıl yanıt verdiğini gösteren demo*
 
 ### 3. RAG Süreci
 
