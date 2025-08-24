@@ -76,12 +76,12 @@ LangFlow arayüzünden chatbot akışını yükle veya oluşturun.
 ### 🎬 Demo Görüntüleri
 
 #### LangFlow Akış Yapısı
-![LangFlow Akış Yapısı](langflow_gif.gif)
+![LangFlow Akış Yapısı](gif/langflow_gif.gif)
 
 *LangFlow'taki node'lar ve bağlantılar - No-code RAG chatbot yapısı*
 
 #### Chatbot Yanıt Demo
-![Chatbot Yanıt Demo](chatbot_gif.gif)
+![Chatbot Yanıt Demo](gif/chatbot_gif.gif)
 
 *Chatbot'un Nutuk hakkında sorulara nasıl yanıt verdiğini gösteren demo*
 
