@@ -50,7 +50,7 @@ langflow
 
 LangFlow arayüzü `http://localhost:3000` adresinde açılacaktır.
 
-> **🎬 Görsel Rehber**: Kurulum tamamlandıktan sonra yukarıdaki demo görüntülerini inceleyerek LangFlow akış yapısını ve chatbot'un nasıl çalıştığını görebilirsiniz!
+> **🎬 Görsel Rehber**: Kurulum tamamlandıktan sonra aşağıdaki demo görüntülerini inceleyerek LangFlow akış yapısını ve chatbot'un nasıl çalıştığını görebilirsiniz!
 
 ### Model Parametreleri
 
