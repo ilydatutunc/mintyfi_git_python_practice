@@ -167,7 +167,7 @@ curl http://127.0.0.1:1880/machine-data
 
 ## Örnek Kullanım Senaryoları
 
-Örnek bir kullanım aşapısı aşağıda verilmiştir:
+Örnek bir kullanım aşağıda verilmiştir:
 
 ![Agent Kullanımı](image/demo.gif)
 
