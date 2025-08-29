@@ -167,6 +167,10 @@ curl http://127.0.0.1:1880/machine-data
 
 ## Örnek Kullanım Senaryoları
 
+Örnek bir kullanım aşapısı aşağıda verilmiştir:
+
+![Agent Kullanımı](image/demo.gif)
+
 ### Desteklenen Sorular
 - "Makine 1'in sıcaklığı nedir?"
 - "Hangi makine en yüksek verimle çalışıyor?"
