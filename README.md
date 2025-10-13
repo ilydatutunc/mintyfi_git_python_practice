@@ -4,8 +4,8 @@ Bu proje, **LangFlow** kullanılarak **kod yazmadan** geliştirilmiş bir Nutuk 
 
 ## Proje Amacı
 
-**No-code yaklaşımı** ile LangFlow'un görsel arayüzünü kullanarak, Nutuk eserindeki bilgileri kullanarak kullanıcıların sorularını doğru ve bağlama uygun şekilde yanıtlamak.
-
+**No-code yaklaşımı** ile LangFlow'un görsel arayüzünü kullanarak, Nutuk eserindeki bilgileri kullanarak kullanıcıların sorularını doğru ve bağlama uygun şekilde yanıtlamaktır.
+ 
 ## Özellikler
 
 - **No-Code Geliştirme**: Kod yazmadan LangFlow'un görsel arayüzü ile geliştirildi
